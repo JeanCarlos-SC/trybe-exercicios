@@ -29,5 +29,16 @@ li em {
 }
 a:hover {
     font-weight: 600;
+}
+a.laranja:hover {
+    color: orange;
+}
+a.verde:hover {
+    color: green;
+}
+a.preta:hover {
     color: black;
+}
+a.amarela:hover {
+    color: yellow;
 }
