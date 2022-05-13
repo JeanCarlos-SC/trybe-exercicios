@@ -5,11 +5,11 @@ O objetivo dos exercícios de hoje, foi realizar quinze pequenos programas. Todo
 Os requisitos dos exercícios foram os seguintes:
 
 1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Faça programas para:
-  * Adição (a + b)
-  * Subtração (a - b)
-  * Multiplicação (a * b)
-  * Divisão (a / b)
-  * Módulo (a % b)
+   * Adição (a + b)
+   * Subtração (a - b)
+   * Multiplicação (a * b)
+   * Divisão (a / b)
+   * Módulo (a % b)
 
 2. Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
 
