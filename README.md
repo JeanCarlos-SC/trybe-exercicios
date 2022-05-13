@@ -10,29 +10,29 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ##### Bloco 1: Unix & Bash ✔️
 
-- [x] 1-3: _Fundamentos do Desenvolvimento Web_
-- [x] 1-3: _Introdução - Unix & Shell_
-- [x] 1-3: _Unix & Bash - Part 1_
-- [x] 1-4: _Unix & Bash - Part 2_
+- [✔️] 1-3: _Fundamentos do Desenvolvimento Web_
+- [✔️] 1-3: _Introdução - Unix & Shell_
+- [✔️] 1-3: _Unix & Bash - Part 1_
+- [✔️] 1-4: _Unix & Bash - Part 2_
 
 ##### Bloco 2: Git, GitHub e Internet ✔️
 
-- [x] 2-1: _Git & GitHub - O que é e para que serve_
-- [x] 2-2: _Git & GitHub - Entendendo os comandos_
-- [x] 2-3: _Internet - Entendendo como ela funciona_
+- [✔️] 2-1: _Git & GitHub - O que é e para que serve_
+- [✔️] 2-2: _Git & GitHub - Entendendo os comandos_
+- [✔️] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução à HTML e CSS ✔️
 
-- [x] 3-1: _Introdução - HTML & CSS_
-- [x] 3-1: _HTML & CSS - Estruturas de página_
-- [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [x] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - Lessons Leanerd]()_
+- [✔️] 3-1: _Introdução - HTML & CSS_
+- [✔️] 3-1: _HTML & CSS - Estruturas de página_
+- [✔️] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [✔️] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [✔️] 3-4: _HTML Semântico_
+- [✔️] 3-5: _[Projeto - Lessons Leanerd]()_
 
 ##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
-- [ ] 4-1: _Introdução - JavaScript_
+- [✔️] 4-1: _Introdução - JavaScript_
 - [ ] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
 - [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
