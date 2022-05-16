@@ -1,7 +1,7 @@
 # DIA 4.2
 
- O seguinte Array foi utilizado para a realização dos exercicíos 1 até o 7 do dia 4.2 
- let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+O seguinte Array foi utilizado para a realização dos exercicíos 1 até o 7 do dia 4.2:
+ * let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 Os exercícios realizados no dia 2 do bloco 4 foram os seguintes:
 
