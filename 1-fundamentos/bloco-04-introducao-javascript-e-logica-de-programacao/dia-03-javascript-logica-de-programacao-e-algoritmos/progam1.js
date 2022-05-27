@@ -4,17 +4,18 @@ for ( i = n -1; i < n && i > 0; i -= 1){
     numbers.push(i);
 }
 
-for (let index = 1; index <= numbers.length; index += 1) {
-    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
-        if (numbers[secondIndex] === n - 1) {
-        let multi = numbers[secondIndex] * n;
-        numbers[secondIndex] = multi;
-        } else {
-        let multi = numbers[secondIndex - secondIndex] * numbers[index - (index -1)];
-        numbers[index - (index -1)] = multi;
-        numbers.shift();
-        }
-    }
-  }
+let length = numbers.length;
 
-  console.log(+n+"! =",numbers[0]);
+for (let index = 0; index < length; index += 1) {
+    if (numbers[index] === n - 1) {
+        let multi = numbers[index] * n;
+        numbers.splice(index, 1, multi);
+    } else {
+        let result = numbers[index - index] * numbers[index - (index -1)];
+        numbers.splice(index - (index -1),1, result)
+        numbers.shift(); 
+        length = numbers.length + index;
+    }
+}
+
+  console.log(+n+"! =",numbers[0])
