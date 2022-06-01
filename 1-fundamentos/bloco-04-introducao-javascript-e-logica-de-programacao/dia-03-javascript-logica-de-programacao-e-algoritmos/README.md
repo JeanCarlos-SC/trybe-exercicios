@@ -3,7 +3,7 @@
 O seguinte Array foi utilizado para a realização dos exercicíos 1 até o 7 do dia 4.2:
  * let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-Os exercícios realizados no dia 2 do bloco 4 foram os seguintes:
+Os exercícios realizados no dia 3 do bloco 4 foram os seguintes:
 
 1. O fatorial é a multiplicação de um número natural pelos seus antecessores, exceto o zero. Por exemplo:
     * O fatorial é representado pelo sinal !, ! = 4 x 3 x 2 x 1 = 24;
