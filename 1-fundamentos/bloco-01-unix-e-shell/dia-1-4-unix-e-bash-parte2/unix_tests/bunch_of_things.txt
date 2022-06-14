@@ -1,18 +1,13 @@
-Unix é Show de buela!
-Html é tudo!
-Jest é Top!
-A trybe é o máximo!
-I am Jean Carlos.
-Alemanha
-Brasil
 Afghanistan
 Albania
+Alemanha
 Algeria
 Andorra
 Angola
 Antigua & Deps
 Argentina
 Armenia
+A trybe é o máximo!
 Australia
 Austria
 Azerbaijan
@@ -28,6 +23,7 @@ Bhutan
 Bolivia
 Bosnia Herzegovina
 Botswana
+Brasil
 Brazil
 Brunei
 Bulgaria
@@ -78,7 +74,9 @@ Guinea-Bissau
 Guyana
 Haiti
 Honduras
+Html é tudo!
 Hungary
+I am Jean Carlos.
 Iceland
 India
 Indonesia
@@ -90,6 +88,7 @@ Italy
 Ivory Coast
 Jamaica
 Japan
+Jest é Top!
 Jordan
 Kazakhstan
 Kenya
@@ -150,8 +149,6 @@ Qatar
 Romania
 Russian Federation
 Rwanda
-St Kitts & Nevis
-St Lucia
 Saint Vincent & the Grenadines
 Samoa
 San Marino
@@ -170,6 +167,8 @@ South Africa
 South Sudan
 Spain
 Sri Lanka
+St Kitts & Nevis
+St Lucia
 Sudan
 Suriname
 Swaziland
@@ -192,6 +191,7 @@ Ukraine
 United Arab Emirates
 United Kingdom
 United States
+Unix é Show de buela!
 Uruguay
 Uzbekistan
 Vanuatu
