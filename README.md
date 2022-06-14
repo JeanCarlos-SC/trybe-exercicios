@@ -46,11 +46,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _Fundamentos - JavaScript - Projetos_
-- [] 5-5: _[Projeto - Arte com Pixels]()_
-- [] 5-6: _(Bônus)[Projeto - Lista de tarefas]()_
-- [] 5-7: _(Bônus)[Projeto - Meme Generator]()_
-- [] 5-7: _(Bônus)[Projeto - Adivinhe a Cor]()_
-- [] 5-7: _(Bônus)[Projeto - Carta Misteriosa]()_
+- [ ] 5-5: _[Projeto - Arte com Pixels]()_
+- [ ] 5-6: _(Bônus)[Projeto - Lista de tarefas]()_
+- [ ] 5-7: _(Bônus)[Projeto - Meme Generator]()_
+- [ ] 5-7: _(Bônus)[Projeto - Adivinhe a Cor]()_
+- [ ] 5-7: _(Bônus)[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
