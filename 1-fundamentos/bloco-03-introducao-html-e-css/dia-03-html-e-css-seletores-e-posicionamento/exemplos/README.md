@@ -6,4 +6,4 @@ e também sobre o conceito de "box model", que ensina como os elementos html se 
 
 #### Exercício sobre Box Model
   * Situação inicial:
-  <a href=></a>
+  <img href="box-model-init.png"></img>
