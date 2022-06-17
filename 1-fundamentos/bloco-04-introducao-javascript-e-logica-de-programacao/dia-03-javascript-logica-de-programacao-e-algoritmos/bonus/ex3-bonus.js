@@ -5,8 +5,6 @@ for(index = 1; index <= n; index += 1) {
     ast.push(' ')
 } 
 
-const div = ast.length -1 / 2;
-
 for(i = n; i <= n && i >= 1; i -= 1){
     ast.splice(i, 1, '*');
     let string = ast.toString();
