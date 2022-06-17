@@ -1,5 +1,6 @@
-let n = 9;
+let n = 3;
 let ast = [];
+let basePy = [];
 
 for (index = 1; index <= n; index += 1) {
     ast.push(' ')
@@ -15,23 +16,32 @@ if (n % 2 === 0) {
     for (i = 1; i <= n; i += 1) {
         if (i === base) {
             ast[i - 1] = "*";
+            basePy[i - 1] = "*";
             right += 1;
             left -= 1;
             let string = ast.toString();
             let result = string.replace(/,/g, '');
             console.log(result);
+            ast.splice(i - 1, 1, ' ');
         }
     }
 
-    for (line = base; line < n && line >= 1; line += 1) {
+    for (line = base; line < n - 1 && line >= 1; line += 1) {
         if (line <= right && line >= left) {
             ast[right - 1] = '*';
             ast[left - 1] = '*';
-            right += 1;
-            left -= 1;
+            basePy[right - 1] = '*';
+            basePy[left - 1] = '*';
             let string = ast.toString();
             let result = string.replace(/,/g, '');
             console.log(result);
+            ast.splice(right - 1, 1, ' ');
+            ast.splice(left - 1, 1, ' ');
+            right += 1;
+            left -= 1;
         }
     }
+    let string = basePy.toString();
+    let result = string.replace(/,/g, '');
+    console.log(`${result}**`);
 }
