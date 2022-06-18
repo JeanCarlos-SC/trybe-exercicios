@@ -1,9 +1,10 @@
-let n = 3;
+let n = 7;
 let ast = [];
 let basePy = [];
 
 for (index = 1; index <= n; index += 1) {
     ast.push(' ')
+    basePy.push('*');
 }
 
 const base = (n + 1) / 2;
@@ -16,7 +17,6 @@ if (n % 2 === 0) {
     for (i = 1; i <= n; i += 1) {
         if (i === base) {
             ast[i - 1] = "*";
-            basePy[i - 1] = "*";
             right += 1;
             left -= 1;
             let string = ast.toString();
@@ -30,8 +30,6 @@ if (n % 2 === 0) {
         if (line <= right && line >= left) {
             ast[right - 1] = '*';
             ast[left - 1] = '*';
-            basePy[right - 1] = '*';
-            basePy[left - 1] = '*';
             let string = ast.toString();
             let result = string.replace(/,/g, '');
             console.log(result);
@@ -43,5 +41,5 @@ if (n % 2 === 0) {
     }
     let string = basePy.toString();
     let result = string.replace(/,/g, '');
-    console.log(`${result}**`);
+    console.log(result);
 }
