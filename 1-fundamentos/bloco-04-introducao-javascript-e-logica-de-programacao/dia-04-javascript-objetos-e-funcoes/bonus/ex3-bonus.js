@@ -15,16 +15,33 @@ const basket = [
   'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
   'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
   'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
-  'Banana', 'Pera', 'Abacate', 'Uva',
+  'Banana', 'Pera', 'Abacate', 'Uva','Jabuticaba'
 ];
-
+function createObject(obj) {
 let fruits = {};
-for (index = 0; index < basket.length; index += 1) {
-  let newFruit = fruits[basket[index]];
+for (index = 0; index < obj.length; index += 1) {
+  let newFruit = fruits[obj[index]];
   if (newFruit === undefined ) {
-    fruits[basket[index]] = 1;
+    fruits[obj[index]] = 1;
   } else {
-    fruits[basket[index]] += 1;
+    fruits[obj[index]] += 1;
   }
 }
-console.table(fruits);
+return fruits
+}
+
+function showMessage(keys, values) {
+let message = [];
+for (let i in keys) {
+  if (values[i] > 1) {
+  message.push(` ${values[i]} ${keys[i]}s`);
+  } else {
+    message.push(` ${values[i]} ${keys[i]}`);
+  }
+}
+
+const string = message.toString();
+return console.log(`Sua cesta posuui:${string};`);
+}
+
+showMessage(Object.keys(createObject(basket)), Object.values(createObject(basket)));
