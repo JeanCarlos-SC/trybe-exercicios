@@ -5,8 +5,6 @@ A seguir estão os exercicíos **bônus** realizados no quarto dia do bloco 4 (I
 #### 1. (Difícil) Faça um programa que receba uma string em algarismos romanos e retorne o número que a string representa.
   * Dicas:
     * Uma string é um array de caracteres, então cada elemento do array é uma letra;
-    * O valor de cada numeral romano é:
-    * <img></img>
     * Que tal criar um objeto que associe cada letra a um numeral para fácil consulta?
     * Atenção! Quando você tem um número pequeno à direita de um número grande, eles devem ser somados. Exemplo: XI = 10 + 1 = 11. No entanto, se o número pequeno está à esquerda de um número maior que ele, ele deve ser subtraído. Exemplo: IX = 10 - 1 = 9;
 
