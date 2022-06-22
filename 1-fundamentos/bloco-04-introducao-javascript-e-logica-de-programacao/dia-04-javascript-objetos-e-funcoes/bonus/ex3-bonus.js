@@ -19,7 +19,7 @@ const basket = [
 ];
 function createObject(obj) {
 let fruits = {};
-for (index = 0; index < obj.length; index += 1) {
+for (let index = 0; index < obj.length; index += 1) {
   let newFruit = fruits[obj[index]];
   if (newFruit === undefined ) {
     fruits[obj[index]] = 1;
