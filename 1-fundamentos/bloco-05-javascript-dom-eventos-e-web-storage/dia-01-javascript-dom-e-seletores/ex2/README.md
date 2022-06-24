@@ -15,6 +15,7 @@ Neste dia no curso da trybe aprendemos sobre o DOM e seus diversos tipos seletor
 <hr>
 <img src='ex2-begin.png' alt='pagina inicial' width=800px></img>
 <hr>
+
 ### Resultado final após o cumprimento dos requisitos:
 <hr>
 <img src='ex2-final.png' alt='resultado' width=800px></img>
