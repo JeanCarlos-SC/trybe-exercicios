@@ -1,5 +1,6 @@
 # Exercícios dia 5.2 - JavaScript - Trabalhando com elementos
 * A seguir estão a primeira parte de exercícios realizados durante a aula do segundo dia do bloco 5, no curso da Trybe.
+* Todos os exercícios foram realizados dentro do arquivo **exemplo.html**, e estão todos devidamente comentados dentro da tag **script**;
 ## Parte I - Buscando elementos
 1. Acesse o elemento **elementoOndeVoceEsta**.
 2. Acesse **pai** a partir de **elementoOndeVoceEsta** e adicione uma **color** a ele.
