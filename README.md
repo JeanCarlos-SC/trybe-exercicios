@@ -30,7 +30,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _[Projeto - Lessons Leanerd](https://jeancarlos-sc.github.io/projetos/lessons-learned/)_
 
-##### Bloco 4: Introdução à JavaScript e Lógica de Programação
+##### Bloco 4: Introdução à JavaScript e Lógica de Programação ✔️
 
 - [x] 4-1: _Introdução - JavaScript_
 - [x] 4-1: _JavaScript - Primeiros passos_
