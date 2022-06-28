@@ -1,6 +1,6 @@
 # Exercícios dia 5.2 - JavaScript - Trabalhando com elementos
 * A seguir se encontra a segunda parte de exercícios realizados durante a aula do segundo dia do bloco 5, no curso da Trybe.
-* Todos os exercícios foram realizados dentro do arquivo **exercises.html**, e estão todos devidamente comentados dentro da tag **script**;
+* Todos os exercícios foram realizados dentro do arquivo **exercises.html**, e estão todos devidamente comentados dentro da tag **script**.
 ## Primeira parte de exercícios 
 1. 🚀 Adicione a tag **h1** com o texto **Exercício 5.2 - JavaScript DOM** como filho da tag **body**;
 2. 🚀 Adicione a tag **main** com a classe **main-content** como filho da tag **body**;
