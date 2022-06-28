@@ -75,24 +75,20 @@ document.getElementById('pai').children[2];
 
 // Parte 3 - Removendo Elementos
 // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
-const childs = document.getElementById('pai').children;
-const filhosElemento = document.getElementById('elementoOndeVoceEsta').children;
-const filhosPFDF =  document.getElementById('primeiroFilhoDoFilho').children;
-    const removeElement = (filhos, pai) => {
-        for (let index = 0; index < filhos.length; index += 1) {
-        let element = filhos[index];
+    const removeElement = () => {
+    const childs = document.querySelectorAll('#paiDoPai section');
+        for (let index = 0; index < childs.length; index += 1) {
+        let element = childs[index];
         if (element.id != 'pai' && element.id != 'elementoOndeVoceEsta' && element.id != 'primeiroFilhoDoFilho') {
-            pai.removeChild(element);
-
+            element.remove();
         }
     }
 }
-removeElement(childs, father);
-removeElement(filhosElemento, fatherTwo);
-removeElement(filhosPFDF, fatherTree);
-document.getElementById('terceiroFilhoDoFilho').remove();
-document.getElementById('quartoEUltimoFilho').remove();
-
+removeElement();
+// removeElement(filhosElemento, fatherTwo);
+// removeElement(filhosPFDF, fatherTree);
+// document.getElementById('terceiroFilhoDoFilho').remove();
+// document.getElementById('quartoEUltimoFilho').remove();
       </script>
 </body>
 </html>
