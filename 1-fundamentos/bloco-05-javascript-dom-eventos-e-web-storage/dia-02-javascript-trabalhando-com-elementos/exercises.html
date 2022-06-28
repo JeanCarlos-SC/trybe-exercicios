@@ -73,7 +73,7 @@
     main.appendChild(section);
     // 4. 🚀 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
     const p = document.createElement('p');
-    p.innerText = 'Algum Texto';
+    p.innerHTML = '<h1>Algum Texto</h1>';
     main.appendChild(p);
     // 5. 🚀 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
     const sectionLeft = document.createElement('section');
@@ -91,11 +91,23 @@
     // 8. 🚀 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
     const list = document.createElement('ul');
     sectionRight.appendChild(list);
+    const obj = {
+      1: 'um',
+      2: 'dois',
+      3: 'três',
+      4: 'quatro',
+      5: 'cinco',
+      6: 'seis',
+      7: 'sete',
+      8: 'oito',
+      9: 'nove',
+      10: 'dez'
+    }
     for (let index = 0; index < 10; index += 1){
         const li = document.createElement('li');
         list.appendChild(li);
         const liValue = document.getElementsByTagName('li')[index];
-        liValue.innerText = index + 1;
+        liValue.innerText = obj[index + 1];
     }
     // 9. 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
     for (i = 1; i <= 3; i += 1) {
