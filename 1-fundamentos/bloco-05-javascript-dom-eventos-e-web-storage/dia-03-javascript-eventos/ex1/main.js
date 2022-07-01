@@ -42,7 +42,7 @@ redirect();
 // a cor do mesmo;
 const changeColor = () => {
     myWebpage.addEventListener('mouseover', () => myWebpage.style.color = '#2fc18c');
-    myWebpage.addEventListener('mouseleave', () => myWebpage.style.color = 'white');
+    myWebpage.addEventListener('mouseleave', () => myWebpage.style.color = 'unset');
 }
 changeColor();
 // Segue abaixo um exemplo do uso de event.target:
