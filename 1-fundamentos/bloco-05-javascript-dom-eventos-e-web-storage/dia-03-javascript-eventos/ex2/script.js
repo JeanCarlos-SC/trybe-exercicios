@@ -191,29 +191,29 @@ selectDay();
 // Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
 // Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
 // Ao pressionar a tecla "enter" o evento também deverá ser disparado.
-const father = document.querySelector('.input-container');
+const father = document.querySelector('.task-list');
 const btnAdd = document.getElementById('btn-add');
 const input = document.getElementById('task-input');
 const addCommitment = () => {
 btnAdd.addEventListener('click', () => {
     if (input.value !== '') {
-    const p = document.createElement('p');
-    p.innerText = input.value;
-    father.appendChild(p);
+    const li = document.createElement('li');
+    li.innerText = input.value;
+    father.appendChild(li);
     input.value = '';
     } else {
         alert('Campo Vazio!!!');
     }
 })
 
-input.addEventListener('keydown', (event) => {
+input.addEventListener('keyup', (event) => {
     const evento = event.key;
     if (evento === 'Enter' && input.value === '') {
         alert('Campo Vazio!!!');
     } else if (evento === 'Enter') {
-        const p = document.createElement('p');
-        p.innerText = input.value;
-        father.appendChild(p);
+        const li = document.createElement('li');
+        li.innerText = input.value;
+        father.appendChild(li);
         input.value = '';
     }
 })
