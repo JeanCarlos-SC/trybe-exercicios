@@ -129,10 +129,12 @@ zoom();
 const createTask = (string) => {
     const mytasks = document.querySelector('.my-tasks');
     const span = document.createElement('span');
-    span.innerText = string;
+    span.innerHTML = string;
     mytasks.appendChild(span);
 }
 createTask('Cozinhar');
+
+
 
 // 🚀 Exercício 8:
 // Implemente uma função que adicione uma legenda com cor para a tarefa.
@@ -142,8 +144,27 @@ createTask('Cozinhar');
 const addLegColor = (cor) => {
     const mytasks = document.querySelector('.my-tasks');
     const div = document.createElement('div');
-    div.className = 'task';
+    div.classList.add('task');
     div.style.backgroundColor = cor;
     mytasks.appendChild(div);
 }
 addLegColor('red');
+createTask('Estudar');
+addLegColor('blue');
+
+// 🚀 Exercício 9:
+// Implemente uma função que selecione uma tarefa.
+// Adicione um evento que ao clicar no elemento com a tag <div> referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada.
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
+const selectTask = () => {
+    const mytasks = document.querySelector('.my-tasks');
+    mytasks.addEventListener('click', (event) => {
+        const evento = event.target;
+        if(evento.classList.contains('selected')){
+        evento.classList.remove('selected');
+        } else {
+        evento.classList.add('selected');
+        }
+    })
+}
+selectTask();
