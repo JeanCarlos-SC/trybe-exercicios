@@ -26,3 +26,9 @@ header {
   align-items: center;
   font-size: 80%;
 }
+
+#desc {
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+}
