@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu';
@@ -31,4 +31,21 @@ header {
   display: flex;
   justify-content: center;
   font-size: 2vh;
+}
+
+#imgs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 560px;
+}
+
+div {
+  background-color:aliceblue;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 5px;
 }
