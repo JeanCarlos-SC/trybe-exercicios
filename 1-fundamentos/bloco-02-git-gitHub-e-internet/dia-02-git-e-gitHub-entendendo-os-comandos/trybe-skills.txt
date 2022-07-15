@@ -3,7 +3,3 @@ O que eu vou aprender na Trybe:
 - Unix
 - Bash
 - Git
-- JavaScript
-- HTML
-- CSS
-
