@@ -24,4 +24,26 @@ function myFizzBuzz(num) {
   return num;
 }
 
-module.exports = { sum, myRemove, myFizzBuzz };
+function encode(phrase) {
+    const a = phrase.replace(/a/gi, 1);
+    const e = a.replace(/e/gi, 2);
+    const i = e.replace(/i/gi, 3);
+    const o = i.replace(/o/gi, 4);
+    const result = o.replace(/u/gi, 5);
+
+    return result;
+}
+
+
+
+function decode(code) {
+  const one = code.replace(/[1]/g, 'a');
+  const two = one.replace(/[2]/g, 'e');
+  const three = two.replace(/[3]/g, 'i');
+  const four = three.replace(/[4]/g, 'o');
+  const result = four.replace(/[5]/g, 'u');
+
+  return result;
+}
+
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode};
