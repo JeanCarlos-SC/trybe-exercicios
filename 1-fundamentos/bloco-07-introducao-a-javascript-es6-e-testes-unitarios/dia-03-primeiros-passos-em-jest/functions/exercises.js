@@ -61,4 +61,17 @@ function techList(arr, string){
   return object;
 };
 
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList};
+const hydrate = (string) => {
+  const reg = /[0-9]/g;
+  const result = string.match(reg);
+  let sum = 0;
+  for (let value of result) {
+    sum += parseInt(value);
+  }
+  if (sum > 1) {
+    return `${sum} copos de água`;
+  }
+  return `${sum} copo de água`
+
+}
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList, hydrate};
