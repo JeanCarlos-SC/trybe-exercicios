@@ -46,9 +46,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _Fundamentos - JavaScript - Projetos_
-- [x] 5-5: _[Projeto - Arte com Pixels]()_
+- [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/JeanCarlos-SC/Project-Pixels-Art)_
 - [x] 5-6: _(Bônus)[Projeto - Lista de tarefas]()_
-- [x] 5-7: _(Bônus)[Projeto - Meme Generator]()_
+- [x] 5-7: _(Bônus)[Projeto - Meme Generator](https://github.com/JeanCarlos-SC/Project-Meme-Generator)_
 - [ ] 5-7: _(Bônus)[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _(Bônus)[Projeto - Carta Misteriosa]()_
 
