@@ -35,7 +35,6 @@ function encode(phrase) {
 }
 
 
-
 function decode(code) {
   const one = code.replace(/[1]/g, 'a');
   const two = one.replace(/[2]/g, 'e');
