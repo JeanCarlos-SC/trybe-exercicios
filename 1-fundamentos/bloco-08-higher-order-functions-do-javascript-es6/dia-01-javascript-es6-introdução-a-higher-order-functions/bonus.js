@@ -3,49 +3,80 @@ const mage = {
     intelligence: 45,
     mana: 125,
     damage: undefined,
-  };
-  
-  const warrior = {
+};
+
+const warrior = {
     healthPoints: 200,
     strength: 30,
     weaponDmg: 2,
     damage: undefined,
-  };
-  
-  const dragon = {
+};
+
+const dragon = {
     healthPoints: 350,
     strength: 50,
     damage: undefined,
-  };
-  
+};
+
+const battleMembers = { mage, warrior, dragon };
+
 const damageDragon = () => {
-    const dragonStrength = dragon.strength;
-    return  Math.floor(Math.random() * ( dragonStrength - 15 + 1)) + 15;
+    return Math.floor(Math.random() * (dragon.strength - 15 + 1)) + 15;
 }
 
 const damageWarrior = () => {
     const minDamage = warrior.strength;
     const maxDamege = warrior.weaponDmg * minDamage;
-    return  Math.floor(Math.random() * ( maxDamege - minDamage + 1)) + minDamage;
+    return Math.floor(Math.random() * (maxDamege - minDamage + 1)) + minDamage;
 }
 
 const damageMage = () => {
     const minDamage = mage.intelligence;
     const maxDamege = minDamage * 2;
-    const damage =  Math.floor(Math.random() * ( maxDamege - minDamage + 1)) + minDamage;
-    const manaMage = mage.mana - 15;
-    if (manaMage < 15 ) {
-        damage =  "Não possui mana suficiente";
-        manaMage = mage.mana;
-    }
     const mageTurn = {
-        dan: damage,
-        man: manaMage
+        dan: "Não possui mana suficiente",
+        man: 0
     };
-
+    
+    if (mage.mana > 15) {
+        let damage = Math.floor(Math.random() * (maxDamege - minDamage + 1)) + minDamage;
+        mageTurn.man = 15;
+        mageTurn.dan = damage;
+        return mageTurn;
+    }
     return mageTurn;
+
 }
 
-console.log(damageMage())
+const gameActions = {
+    warriorTurn: (atackWarrior) => {
+        dragon.healthPoints -= atackWarrior();
+        warrior.damage = atackWarrior();
+    },
+    mageTurn: (atackMage) => {
+        dragon.healthPoints -= atackMage().dan;
+        mage.damage = atackMage().dan;
+        mage.mana -= atackMage().man;
+    },
+    dragonTurn: (atackDragon) => {
+        mage.healthPoints -= atackDragon();
+        warrior.healthPoints -= atackDragon();
+        dragon.damage = atackDragon();
+    },
+    result: () => battleMembers,
+};
 
-const battleMembers = { mage, warrior, dragon };
+gameActions.warriorTurn(damageWarrior);
+gameActions.mageTurn(damageMage);
+gameActions.dragonTurn(damageDragon);
+gameActions.warriorTurn(damageWarrior);
+gameActions.mageTurn(damageMage);
+gameActions.dragonTurn(damageDragon);
+gameActions.mageTurn(damageMage);
+gameActions.mageTurn(damageMage);
+gameActions.mageTurn(damageMage);
+gameActions.mageTurn(damageMage);
+gameActions.mageTurn(damageMage);
+gameActions.mageTurn(damageMage);
+gameActions.mageTurn(damageMage);
+console.log(gameActions.result());
