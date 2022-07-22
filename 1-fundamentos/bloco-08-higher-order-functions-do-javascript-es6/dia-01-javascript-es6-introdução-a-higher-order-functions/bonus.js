@@ -18,11 +18,17 @@ const mage = {
     damage: undefined,
   };
   
-const damage = () => {
+const damageDragon = () => {
     const dragonStrength = dragon.strength;
     return  Math.floor(Math.random() * ( dragonStrength - 15 + 1)) + 15;
 }
 
-console.log(damage())
+const damageWarrior = () => {
+    const minDamage = warrior.strength;
+    const maxDamege = warrior.weaponDmg * minDamage;
+    return  Math.floor(Math.random() * ( maxDamege - minDamage + 1)) + minDamage;
+}
+
+console.log(damageWarrior())
 
 const battleMembers = { mage, warrior, dragon };
