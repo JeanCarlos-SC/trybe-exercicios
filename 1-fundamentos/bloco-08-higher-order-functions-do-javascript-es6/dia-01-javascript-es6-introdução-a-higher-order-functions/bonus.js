@@ -29,6 +29,23 @@ const damageWarrior = () => {
     return  Math.floor(Math.random() * ( maxDamege - minDamage + 1)) + minDamage;
 }
 
-console.log(damageWarrior())
+const damageMage = () => {
+    const minDamage = mage.intelligence;
+    const maxDamege = minDamage * 2;
+    const damage =  Math.floor(Math.random() * ( maxDamege - minDamage + 1)) + minDamage;
+    const manaMage = mage.mana - 15;
+    if (manaMage < 15 ) {
+        damage =  "Não possui mana suficiente";
+        manaMage = mage.mana;
+    }
+    const mageTurn = {
+        dan: damage,
+        man: manaMage
+    };
+
+    return mageTurn;
+}
+
+console.log(damageMage())
 
 const battleMembers = { mage, warrior, dragon };
